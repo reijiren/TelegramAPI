@@ -31,6 +31,7 @@ Telegram API is a RESTful API used in [Telegram Aplication](https://github.com/r
 
 * [Node JS](https://nodejs.org/en/docs/)
 * [Express JS](https://expressjs.com/)
+* [Socket.IO](https://socket.io/)
 * [PostgreSQL](https://www.postgresql.org/)
 
 
