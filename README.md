@@ -83,5 +83,5 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- RELATED PROJECT -->
 ## Related Project
-Food Recipes application
+Telegram application
 * [Telegram Application](https://github.com/reijiren/TelegramApp)
