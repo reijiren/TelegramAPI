@@ -120,5 +120,5 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- RELATED PROJECT -->
 ## Related Project
-Telegram application
+This API is used in [Telegram application](#).
 * [View Documentation](https://github.com/reijiren/TelegramApp)
