@@ -1,4 +1,5 @@
 /node_modules
 /assets/*
 !assets/default.png
+!assets/telegram_logo.png
 .env

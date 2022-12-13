@@ -54,7 +54,7 @@ const userModel = {
         return new Promise((resolve, reject) => {
             db.query(`
             insert into users (fullname, email, password, image, date_created)
-            values ('${data.fullname}', '${data.email}', '${data.password}', 'default.png', now());
+            values ('${data.fullname}', '${data.email}', '${data.password}', 'https://res.cloudinary.com/dmkviiqax/image/upload/v1670786753/default_qux8xg.jpg|&&|', now());
             `, (err, res) => {
                 if(err) return reject(err);
                 resolve(res);

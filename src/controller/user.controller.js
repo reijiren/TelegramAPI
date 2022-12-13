@@ -1,5 +1,6 @@
 const userModel = require('../model/user.model');
 const chatModel = require('../model/chat.model');
+const cloudinary = require("../helper/cloudinary");
 const { success, failed, successWithToken } = require('../helper/response');
 
 const bcrypt = require('bcrypt');
@@ -142,16 +143,20 @@ const userController = {
 
     // update photo
     updatePhoto: async(req, res) => {
-        const id = req.params.id;
-        const img = req.file.filename;
-
-        await userModel.updatePhoto(id, img)
-        .then((result) => {
-            success(res, result.rowCount, "success", "update photo success");
-        })
-        .catch((err) => {
-            failed(res, err.message, "failed", "failed to update photo");
-        });
+        try{
+            const id = req.params.id;
+            const img = await cloudinary.uploader.upload(req.file?.path);
+    
+            await userModel.updatePhoto(id, `${img.secure_url}|&&|${img.public_id}`)
+            .then((result) => {
+                success(res, result.rowCount, "success", "update photo success");
+            })
+            .catch((err) => {
+                failed(res, err.message, "failed", "failed to update photo");
+            });
+        }catch(err){
+            console.log(err)
+        }
     },
 
     // user's chat list

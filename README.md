@@ -3,7 +3,10 @@
 
   <h3 align="center">Telegram API</h3>
   <p align="center">
-    <image align="center" width="200" src='./assets/' />
+    <image align="center" width="400" src='./assets/telegram_logo.png' />
+  </p>
+  <p align="center">
+    <a href="https://telegramapi-rhefrz.up.railway.app">View API Demo</a>
   </p>
 </p>
 
@@ -13,7 +16,8 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+  * [Project Structure](#project-structure)
+  * [Package Modules](#package-modules)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -25,14 +29,44 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Telegram API is a RESTful API used in [Telegram Aplication](https://github.com/reijiren/TelegramApp). This API handles every functions in Telegram Application, such as login, register, update profile, get lists of contacts and chat, and send message to other user.
+Telegram API is a RESTful API used in [Telegram Aplication](#). This API handles every functions in Telegram Application, such as login, register, update profile, get lists of contacts and chat, and send message to other user.
 
-### Built With
+### Project Structure
+```
+|── TelegramAPI
+   |── assets                           # Public assets
+   |── src                              # Project source code
+       |── config                       # Database configuration
+       |── controller                   # Request controller
+       |── helper                       # Cloudinary setting, Env setting, JWT generation and response
+       |── middleware                   # Middleware configuration
+       |── model                        # Database query model
+       |── router                       # API Endpoint routes
+       |── socket                       # Socket model
+   |── .env                             # Environment variables
+   |── .gitignore                       # Files that should be ignored  
+   |── Blanja.postman_collection.json   # Postman Documentation
+   |── db.sql                           # SQL database creation
+   |── index.js                         # Index file
+   |── README.md                        # Readme
+```
+
+### Package Modules
+
+Below are lists of modules used in this API:
 
 * [Node JS](https://nodejs.org/en/docs/)
 * [Express JS](https://expressjs.com/)
 * [Socket.IO](https://socket.io/)
 * [PostgreSQL](https://www.postgresql.org/)
+* [Cloudinary](https://cloudinary.com/)
+* [Dotenv](https://www.npmjs.com/package/dotenv)
+* [Bcrypt](https://www.npmjs.com/package/bcrypt)
+* [CORS](https://www.npmjs.com/package/cors)
+* [JSONWebToken](https://www.npmjs.com/package/jsonwebtoken)
+* [Multer](https://www.npmjs.com/package/multer)
+* [Nodemon](https://www.npmjs.com/package/nodemon)
+* [Pg](https://www.npmjs.com/package/pg)
 
 
 <!-- GETTING STARTED -->
@@ -63,7 +97,9 @@ DB_PASSWORD = your_db_password
 DB_PORT = your_db_port
 PORT = 3001
 JWT_SECRET = your_token_secret
-
+CLOUD_NAME = your_cloudinary_name
+API_KEY = your_cloudinary_api_key
+API_SECRET = your_cloudinary_api_secret
 ```
 
 
@@ -85,4 +121,4 @@ Contributions are what make the open source community such an amazing place to b
 <!-- RELATED PROJECT -->
 ## Related Project
 Telegram application
-* [Telegram Application](https://github.com/reijiren/TelegramApp)
+* [View Documentation](https://github.com/reijiren/TelegramApp)
