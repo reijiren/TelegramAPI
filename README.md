@@ -34,21 +34,21 @@ Telegram API is a RESTful API used in [Telegram Aplication](#). This API handles
 ### Project Structure
 ```
 |── TelegramAPI
-   |── assets                           # Public assets
-   |── src                              # Project source code
-       |── config                       # Database configuration
-       |── controller                   # Request controller
-       |── helper                       # Cloudinary setting, Env setting, JWT generation and response
-       |── middleware                   # Middleware configuration
-       |── model                        # Database query model
-       |── router                       # API Endpoint routes
-       |── socket                       # Socket model
-   |── .env                             # Environment variables
-   |── .gitignore                       # Files that should be ignored  
-   |── Blanja.postman_collection.json   # Postman Documentation
-   |── db.sql                           # SQL database creation
-   |── index.js                         # Index file
-   |── README.md                        # Readme
+   |── assets                               # Public assets
+   |── src                                  # Project source code
+       |── config                           # Database configuration
+       |── controller                       # Request controller
+       |── helper                           # Cloudinary setting, Env setting, JWT generation and response
+       |── middleware                       # Middleware configuration
+       |── model                            # Database query model
+       |── router                           # API Endpoint routes
+       |── socket                           # Socket model
+   |── .env                                 # Environment variables
+   |── .gitignore                           # Files that should be ignored  
+   |── db.sql                               # SQL database creation
+   |── index.js                             # Index file
+   |── README.md                            # Readme
+   |── Telegram.postman_collection.json     # Postman Documentation
 ```
 
 ### Package Modules
