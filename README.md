@@ -29,7 +29,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Telegram API is a RESTful API used in [Telegram Aplication](#). This API handles every functions in Telegram Application, such as login, register, update profile, get lists of contacts and chat, and send message to other user.
+Telegram API is a RESTful API used in [Telegram Aplication](https://telegram-rhefrz.vercel.app). This API handles every functions in Telegram Application, such as login, register, update profile, get lists of contacts and chat, and send message to other user.
 
 ### Project Structure
 ```
@@ -120,5 +120,5 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- RELATED PROJECT -->
 ## Related Project
-This API is used in [Telegram application](#).
+This API is used in [Telegram application](https://telegram-rhefrz.vercel.app).
 * [View Documentation](https://github.com/reijiren/TelegramApp)
